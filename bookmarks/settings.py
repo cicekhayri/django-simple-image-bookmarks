@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'social.apps.django_app.default',
     'images',
     'sorl.thumbnail',
+    'actions',
 ]
 
 MIDDLEWARE_CLASSES = [
