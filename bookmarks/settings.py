@@ -148,3 +148,8 @@ SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
 SOCIAL_AUTH_TWITTER_KEY = 'XXX' # Twitter Consumer Key
 SOCIAL_AUTH_TWITTER_SECRET = 'XXX' # Twitter Consumer Secret
+
+
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
+}
